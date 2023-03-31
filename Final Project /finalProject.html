@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Dice Game</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Dice Game</h1>
+     
+      <div id="game-board">
+        <h1>Round: <span id="round-number">0</span></h1>
+        <div class="player-section">
+          <h2>Player</h2>
+          <p>Player Score: <span id="player-total-score">0</span></p>
+          <p>Round Scores: <span id="player-round-score">0</span></p>
+          <p>Dice: <span id="player-dice"></span></p>
+        </div>
+        <div class="computer-section">
+          <h2>Computer</h2>
+          <p>Computer Score: <span id="computer-total-score">0</span></p>
+          <p>Round Scores: <span id="computer-round-score">0</span></p>
+          <p>Dice: <span id="computer-dice"></span></p>
+        </div>
+        <h3>Click the "Roll Dice" button to play.</h3>
+        <div class="button-section">
+          <button id="roll-button">Roll Dice</button>
+          <button id="reset-button">Reset</button>
+        </div>
+      </div>
+      <div class="result-section">
+        <img id="result-image">
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts/diceGame.js"></script>
+  </body>
+</html>

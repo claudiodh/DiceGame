@@ -1,0 +1,83 @@
+// Set up variables for colors
+$primary-color: #007bff;
+$secondary-color: #6c757d;
+$background-color: #f8f9fa;
+
+// Set up styles for the body
+body {
+  background-image: url('https://source.unsplash.com/random');
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  color: $secondary-color;
+}
+
+// Set up styles for the game board
+#game-board {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: $background-color;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+// Set up styles for the player and computer sections
+.player-section,
+.computer-section {
+  text-align: center;
+  margin: 20px;
+}
+
+// Set up styles for the dice images
+.player-dice,
+.computer-dice {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.player-dice {
+  background-image: url('https://www.pngfind.com/pngs/m/9-90560_dice-clipart-png-transparent-png.png');
+}
+
+.computer-dice {
+  background-image: url('https://www.pngfind.com/pngs/m/39-398456_dice-clipart-red-transparent-png.png');
+}
+
+// Set up styles for the buttons
+.button-section {
+  text-align: center;
+  margin: 20px;
+}
+
+button {
+  background-color: $primary-color;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: darken($primary-color, 10%);
+}
+
+// Set up styles for the game result section
+.result-section {
+  text-align: center;
+  margin: 20px;
+}
+
+h2#game-result {
+  font-size: 2em;
+  font-weight: bold;
+}
+  
